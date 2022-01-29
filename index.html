@@ -1,4 +1,3 @@
-<!-- //-heng- -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,41 +11,59 @@
 </head>
 
 <body>
-  <div class=" container">
-    <p>Welcome to quiz</p>
-    <button class="buttonPlayQuiz" id="btn-quiz">Play Quiz</button>
-    <button class="buttonEditQuiz" id="btn-edit-quiz">Edit Quiz</button>
-  </div>
-  <div class="container">
-    <section class="question">
-      <p class="question"></p>
-      <div class="answers">
+  <div class="getbacknext">
+    <button class="clinker">
+        <div class="getback" id="getback">Back</div>
+    </button>
+</div>
 
-      </div>
-    </section>
-  </div>
-  <section class="question" id="play-quiz">
-    <div class="card1">
-      <div class="card-title">
-        <h3 id="questions">1/ How old are you ?</h3>
-        <div class="point">
-          <p class="score"><span id="score">0</span>/10</p>
+<div class="addition_quiz">
+    <form>
+        <div class="maker">
+            <p class="take-show">Make your question</p>
         </div>
-      </div>
-      <form name="choice-container">
-        <input class="chioce" type="radio" name="fruits" value="heng" />20 year old
-        <input class="chioce" type="radio" name="fruits" value="narong" />23 year old
-        <br>
-        <input class="chioce" type="radio" name="fruits" value="kea" />20 year old
-        <input class="chioce" type="radio" name="fruits" value="teacher" />20 year old
-      </form>
-    </div>
-  </section>
+        <div class="oftion_input">
+            <input class="optional" type="text" placeholder="Question">
+        </div>
+        <div class="chooser_option">
+            <div class="chocess" id="option1"> 
+                <input type="radio" name="radio">
+                <input id="tion1"  type="text" class="optioner" placeholder="Option1">
+            </div>
+            <div class="chocess" id="option3"> 
+                <input type="radio" name="radio">
+                <input id="tion3" type="text" class="optioner" placeholder="Option3">
+            </div>
+        </div>
 
-  <div class="Submit">
-    <h5>You can submit here</h5>
-    <button type="submit" id="submit">Submit</button>
-  </div>
+        <div class="chooser_option" >
+            <div class="chocess" id="option2">
+                <input type="radio" name="radio">
+                <input id="tion2"  type="text" class="optioner" placeholder="Option2"><br>
+            </div>
+            <div class="chocess" id="option4">
+                <input type="radio" name="radio">
+                <input id="tion4"  type="text" class="optioner" placeholder="Option4"><br>
+            </div>
+        </div>
+    </form>
+    <div>
+        <button  class="addtogo" id="addtogo">Add+</button>
+    </div>
+    <div class="takeback">
+        <button class="clickerss">
+            <div class="getdone" id="getdone">Done</div>
+        </button>
+    </div>
+</div>
+<div class="storanswers">
+    <div class="biganswer">
+
+    </div>
+    <div class="spaners">
+
+    </div>
+</div>
 
 </body>
 <script src="js/main.js"></script>
