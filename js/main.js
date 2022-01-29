@@ -1,3 +1,60 @@
+// function remove ------------------------------------------------------
+function deleteOption(event){
+    
+  if (event.target.id === 'delete'){
+      event.target.parentElement.remove();
+  }
+}
+
+let btndelete = document.querySelectorAll("#delete");
+for (let btn of btndelete){
+  btn.addEventListener('click',deleteOption);
+}
+
+// function display question---------------------------------------------
+
+let arrQ = [
+  {id:"ques1",question:"1/How many province in Cambodia?",
+chooseAnswer:["20 province","22 province","24 province","25 province"],
+correctAnswer: "25 province"},
+{id:"ques2",question:"2/What is your subject did you learn?",
+chooseAnswer:["HTML/English","Python/English/Algarithm/HTML","Algarithm/Python","English/HTML/Python"],
+correctAnswer:"Python/English/Algarithm/HTML"},
+{id:"ques3",question:"3/How old is Angkor Wat?",
+chooseAnswer:["1200 old","1500 old","700 old","900 old"],
+correctAnswer:"900 old"},
+{id:"ques4",question:"4/What is capital of Cambodia?",
+chooseAnswer:["Phnom Penh","Ratanakiri","Siem Reap","Central"],
+correctAnswer:"Phnom Penh"}
+];
+
+// function score------------------------------------------------
+function submitTask(){
+  let answers = document.querySelectorAll(".answers");
+  for (let answer of answers){
+      if (answer.checked){
+          arrayOfAnswer.push(answer.value);
+          console.log(arrayOfAnswer)
+      }
+  }
+  checkAnswer ()
+}
+let arrayOfAnswer = []
+function checkAnswer (){
+  let score = 0;
+  for (let i in arrQ){
+      if (arrayOfAnswer[i] === arrQ[i].correctAnswer){
+          score += 10;
+      }
+     
+  }
+  let getScore = document.getElementById("scores");
+  getScore.textContent = score;
+}
+
+document.querySelector("#btnSubmit").addEventListener("click",submitTask);
+// make form ------------------------------------------------------------------------------------
+
 function makers(){
   let quest=document.querySelector(".optional");
   

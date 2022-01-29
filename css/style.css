@@ -3,6 +3,81 @@ body{
     padding: 2px 2px;
     width: 50%;
 }
+body{
+    padding: 0;
+    margin: 0;
+}
+#allScore{
+    text-align: center;
+}
+p{
+    display: flex;
+}
+form{
+
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 20px auto;	
+    font-family: Open Sans;
+    background-color: rgb(240, 238, 238);
+    padding: 20px 30px;
+    font-size: 18px;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#score{
+    margin-left: 46px;
+}
+input{
+    margin: 20px 20px;
+}
+#next{
+    text-align: center;
+    width: 8%;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    background: rgb(133, 133, 248);
+}
+#next:hover{
+    box-shadow: 2px 4px 8px 1px #aaa;
+    transform: translateY(-2px);
+}
+button{
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 12px 32px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    background: blue;
+}
+button:hover{
+    box-shadow: 2px 4px 8px 1px #aaa;
+    transform: translateY(-2px);
+}
+.fa{
+    margin-left: 300px;
+    font-size: 200px;
+    color: red;
+}
+i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.submit{
+    text-align: center;
+}
+#backGoAdd{
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /* =====================Make form to creation==========> */
